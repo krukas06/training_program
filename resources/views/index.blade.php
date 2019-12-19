@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
@@ -125,81 +126,45 @@
     <div class="container">
         <div class="row text-center header">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 animate-in" data-anim-type="fade-in-up">
-                <h3>Our Services</h3>
+                <h3>Сервисы сайта</h3>
                 <hr />
             </div>
-        </div>
-        <div class="row animate-in" data-anim-type="fade-in-up">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="services-wrapper">
-                    <i class="ion-document"></i>
-                    <h3>Consectetur tellus nec</h3>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
+            <div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html">
+                    <div class="work-wrapper">
+
+                        <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/1.jpg')}}">
+
+                            <img src="{{asset('img/portfolio/1.jpg')}}" class="img-responsive img-rounded" alt="" />
+                        </a>
+
+                        <h4>Теоритический курс</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="services-wrapper">
-                    <i class="ion-scissors"></i>
-                    <h3>Consectetur tellus nec</h3>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html css">
+                    <div class="work-wrapper">
+
+                        <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/2.jpg')}}">
+
+                            <img src="{{asset('img/portfolio/2.jpg')}}" class="img-responsive img-rounded" alt="" />
+                        </a>
+
+                        <h4>Конспект для повторения</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="services-wrapper">
-                    <i class="ion-clipboard"></i>
-                    <h3>Consectetur tellus nec</h3>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 code script">
+                    <div class="work-wrapper">
+
+                        <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/3.jpg')}}">
+
+                            <img src="{{asset('img/portfolio/3.jpg')}}" class="img-responsive img-rounded" alt="" />
+                        </a>
+
+                        <h4>Тест "Проверь себя"</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="services-wrapper">
-                    <i class="ion-calendar"></i>
-                    <h3>Consectetur tellus nec</h3>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="services-wrapper">
-                    <i class="ion-erlenmeyer-flask"></i>
-                    <h3>Consectetur tellus nec</h3>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="services-wrapper">
-                    <i class="ion-monitor"></i>
-                    <h3>Consectetur tellus nec</h3>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="services-wrapper">
-                    <i class="ion-pinpoint"></i>
-                    <h3>Consectetur tellus nec</h3>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="services-wrapper">
-                    <i class="ion-tshirt-outline"></i>
-                    <h3>Consectetur tellus nec</h3>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <div class="services-wrapper">
-                    <i class="ion-speedometer"></i>
-                    <h3>Consectetur tellus nec</h3>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
+
                 </div>
             </div>
         </div>
@@ -214,88 +179,39 @@
     <div class="container">
         <div class="row text-center header animate-in" data-anim-type="fade-in-up">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h3>Our Works</h3>
+                <h3>Письмо администрации</h3>
                 <hr />
             </div>
         </div>
-        <div class="row text-center animate-in" data-anim-type="fade-in-up" >
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pad-bottom">
-                <div class="caegories">
-                    <a href="#" data-filter="*" class="active btn btn-custom btn-custom-two btn-sm">All</a>
-                    <a href="#" data-filter=".html" class="btn btn-custom btn-custom-two btn-sm">HTML</a>
-                    <a href="#" data-filter=".css" class="btn btn-custom btn-custom-two btn-sm">CSS</a>
-                    <a href="#" data-filter=".code" class="btn btn-custom btn-custom-two btn-sm" >CODE</a>
-                    <a href="#" data-filter=".script" class="btn btn-custom btn-custom-two btn-sm" >SCRIPT</a>
-                </div>
-            </div>
-        </div>
         <div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
-
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html">
-                <div class="work-wrapper">
-
-                    <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/1.jpg')}}">
-
-                        <img src="{{asset('img/portfolio/1.jpg')}}" class="img-responsive img-rounded" alt="" />
-                    </a>
-
-                    <h4>Morbi mollis lectus et ipsum</h4>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html css">
-                <div class="work-wrapper">
-
-                    <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/2.jpg')}}">
-
-                        <img src="{{asset('img/portfolio/2.jpg')}}" class="img-responsive img-rounded" alt="" />
-                    </a>
-
-                    <h4>Morbi mollis lectus et ipsum</h4>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 code script">
-                <div class="work-wrapper">
-
-                    <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/3.jpg')}}">
-
-                        <img src="{{asset('img/portfolio/3.jpg')}}" class="img-responsive img-rounded" alt="" />
-                    </a>
-
-                    <h4>Morbi mollis lectus et ipsum</h4>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html script">
-                <div class="work-wrapper">
-
-                    <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/4.jpg')}}">
-
-                        <img src="{{asset('img/portfolio/4.jpg')}}" class="img-responsive img-rounded" alt="" />
-                    </a>
-
-                    <h4>Morbi mollis lectus et ipsum</h4>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html code">
-                <div class="work-wrapper">
-
-                    <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/5.jpg')}}">
-
-                        <img src="{{asset('img/portfolio/5.jpg')}}" class="img-responsive img-rounded" alt="" />
-                    </a>
-
-                    <h4>Morbi mollis lectus et ipsum</h4>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 script">
-                <div class="work-wrapper">
-
-                    <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/6.jpg')}}">
-
-                        <img src="{{asset('img/portfolio/6.jpg')}}" class="img-responsive img-rounded" alt="" />
-                    </a>
-
-                    <h4>Morbi mollis lectus et ipsum</h4>
-                </div>
+            <div> </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"> </div>
+                    <div class="col-md-4">
+                        <h3>Форма обратной связи</h3>
+                        <form action="/mail" method="post">
+                            {{csrf_field()}}
+                            <div class="form-group">
+                                <label for="name">Ваше имя:</label>
+                                <input type="name" name="name" class="form-control" id="name" placeholder="Имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="email1">E-mail:</label>
+                                <input type="email" name="email" class="form-control" id="email1" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Заголовок</label>
+                                <input type="phone" name="title" class="form-control" id="phone" placeholder="Заголовок">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Текст письма:</label>
+                                <textarea  class="form-control" name="message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info">Отправить сообщение</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4"> </div> </div>
             </div>
         </div>
     </div>
