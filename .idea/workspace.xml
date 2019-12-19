@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="479bb8c4-1e69-4f0d-a9d3-656266e99dbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MailController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/training_program.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/training_program.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/NewsRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Repository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/conspect.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/news.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/post.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/teory.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/test.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -139,7 +144,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -147,11 +152,11 @@
       <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public\img" />
       <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public\js" />
       <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public" />
       <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public\css" />
       <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\resources\js" />
-      <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\resources\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -182,7 +187,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576736103410</updated>
-      <workItem from="1576736105294" duration="12865000" />
+      <workItem from="1576736105294" duration="22163000" />
     </task>
     <servers />
   </component>
@@ -190,9 +195,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="714" y="110" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576759489338">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="110" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576759489338" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576736860607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576736860607" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576760149264">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576760149264" />
   </component>
 </project>

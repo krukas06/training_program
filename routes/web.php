@@ -16,3 +16,12 @@ Route::get('/', function () {
 });
 
 Route::post('/mail', 'MailController@send_message');
+
+Route::get('/teory', 'CursController@teory');
+Route::get('/conspect', 'CursController@conspect');
+Route::get('/test', 'CursController@test_t');
+Route::get('/news', 'PostController@list_message');
+Route::resource('post', 'PostController',['parametres'=>[
+    'post'=>'id'
+]
+]);

@@ -29,7 +29,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#menu-section" style="background-image: url({{asset('img/2.jpg')}}); background-repeat: no-repeat; background-size: 100%;">
+<body data-spy="scroll" data-target="#menu-section" style="/*background-image: url({{asset('img/2.jpg')}}); background-repeat: no-repeat; background-size: 100%;*/">
 <!--MENU SECTION START-->
 <div class="navbar navbar-inverse navbar-fixed-top scroll-me" id="menu-section" >
     <div class="container">
@@ -47,6 +47,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="/news">Новости</a></li>
                 <li><a href="#home">Главная</a></li>
                 <li><a href="#services">Сервисы сайта</a></li>
                 <li><a href="#work">Образовательный курс</a></li>
@@ -134,7 +135,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html">
                     <div class="work-wrapper">
 
-                        <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/1.jpg')}}">
+                        <a class="fancybox-media" title="Image Title Goes Here" href="/teory">
 
                             <img src="{{asset('img/portfolio/1.jpg')}}" class="img-responsive img-rounded" alt="" />
                         </a>
@@ -145,7 +146,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html css">
                     <div class="work-wrapper">
 
-                        <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/2.jpg')}}">
+                        <a class="fancybox-media" title="Image Title Goes Here" href="/conspect">
 
                             <img src="{{asset('img/portfolio/2.jpg')}}" class="img-responsive img-rounded" alt="" />
                         </a>
@@ -156,7 +157,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 code script">
                     <div class="work-wrapper">
 
-                        <a class="fancybox-media" title="Image Title Goes Here" href="{{asset('img/portfolio/3.jpg')}}">
+                        <a class="fancybox-media" title="Image Title Goes Here" href="/test">
 
                             <img src="{{asset('img/portfolio/3.jpg')}}" class="img-responsive img-rounded" alt="" />
                         </a>

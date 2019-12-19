@@ -8,6 +8,10 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
+
 {
+    protected $n_rep;
+
+
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
