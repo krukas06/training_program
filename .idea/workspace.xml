@@ -2,19 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="479bb8c4-1e69-4f0d-a9d3-656266e99dbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Repositories/NewsRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Repository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/conspect.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/news.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/post.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/teory.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/test.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style_l.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/gradient.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/pass-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/user-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin_panel.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/reg_log.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/second.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/list_news.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/newsadd.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +34,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -144,19 +156,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\resources\views" />
+      <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public\css" />
       <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public\img" />
       <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public\js" />
       <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public" />
-      <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public\css" />
-      <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\resources\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Администратор\Downloads\OSPanel\domains\training_program\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -187,7 +199,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576736103410</updated>
-      <workItem from="1576736105294" duration="22163000" />
+      <workItem from="1576736105294" duration="26370000" />
+      <workItem from="1576821941270" duration="8134000" />
     </task>
     <servers />
   </component>
@@ -199,13 +212,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="110" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576759489338" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576736860607">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576826748071">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576736860607" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576760149264">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576826748071" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576822580032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576760149264" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576822580032" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576821939378">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576821939378" />
   </component>
 </project>

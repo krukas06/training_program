@@ -38,6 +38,13 @@ class PostController extends Controller
         return $news;
     }
 
+    public function deletePost(Request $request){
+        $data = $request->all();
+        $post = Post::find($data['id']);
+        $post->delete();
+        return redirect("/list");
+    }
+
 
 
     /**
@@ -48,6 +55,8 @@ class PostController extends Controller
     public function index()
     {
         //
+        $posts =$this->getNews();
+        return view('list_news')->with(array('posts'=>$posts));
     }
 
     /**
@@ -69,6 +78,22 @@ class PostController extends Controller
     public function store(Request $request)
     {
         //
+
+        if ($request->hasFile('img')) {
+
+           // dd($request);
+            //$destinationPath = 'content_images/';
+            $filename = $request['img']->getClientOriginalName();
+            $file = $request->file('img');
+            $file->move(public_path('img'), $filename);
+        }
+        $data = $request->all();
+        $data['img'] = $filename;
+        //$data['img'] = json_encode($names);
+        $post = new  Post;
+        $post ->fill($data);
+        $post ->save();
+        return redirect('/admin');
     }
 
     /**

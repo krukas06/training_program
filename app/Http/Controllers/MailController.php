@@ -16,7 +16,7 @@ class MailController extends Controller
             $message->from($data['email'], 'ot');
         });
 
-        return view('index')->with('status','Сообщение отправлено');
+         return redirect('/');
 
     }
 }
