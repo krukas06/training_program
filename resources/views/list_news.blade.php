@@ -16,6 +16,7 @@
 <ul id="navigation">
     <li><a href="/">На главную</a></li>
     <li><a href="/add/news">Добавление новостей</a></li>
+    <li><a href="/add/lesson">Добавление курсов</a></li>
     <li><a href="/list">Список новостей</a></li>
 </ul>
 

@@ -41,7 +41,7 @@
             </button>
             <a class="navbar-brand" href="#">
 
-                Охрана окружающей среды
+                Ресурсный центр
 
             </a>
         </div>
@@ -49,9 +49,11 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/news">Новости</a></li>
                 <li><a href="#home">Главная</a></li>
-                <li><a href="#services">Сервисы сайта</a></li>
-                <li><a href="#work">Образовательный курс</a></li>
-                <li><a href="#grid">О проекте</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="/lessons">IT школа</a></li>
+                <li><a href="#">Школа юный инженер</a></li>
+                <li><a href="#">Объеденения по интересам</a></li>
+                <li><a href="#">Расписание</a></li>
                 <li><a href="#contact">Контакты</a></li>
             </ul>
         </div>
@@ -127,7 +129,7 @@
     <div class="container">
         <div class="row text-center header">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 animate-in" data-anim-type="fade-in-up">
-                <h3>Сервисы сайта</h3>
+                <h3>Услуги</h3>
                 <hr />
             </div>
             <div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
@@ -135,12 +137,12 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html">
                     <div class="work-wrapper">
 
-                        <a class="fancybox-media" title="Image Title Goes Here" href="/teory">
+                        <a class="fancybox-media" title="Image Title Goes Here" href="/lessons">
 
                             <img src="{{asset('img/portfolio/1.jpg')}}" class="img-responsive img-rounded" alt="" />
                         </a>
 
-                        <h4>Теоритический курс</h4>
+                        <h4>IT школа</h4>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html css">
@@ -151,7 +153,7 @@
                             <img src="{{asset('img/portfolio/2.jpg')}}" class="img-responsive img-rounded" alt="" />
                         </a>
 
-                        <h4>Конспект для повторения</h4>
+                        <h4>Школа юный инженер</h4>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 code script">
@@ -162,7 +164,7 @@
                             <img src="{{asset('img/portfolio/3.jpg')}}" class="img-responsive img-rounded" alt="" />
                         </a>
 
-                        <h4>Тест "Проверь себя"</h4>
+                        <h4>Объденения по инересам</h4>
                     </div>
                 </div>
 
@@ -223,7 +225,7 @@
     <div class="container">
         <div class="row text-center header animate-in" data-anim-type="fade-in-up">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h3>Team Members </h3>
+                <h3>Преподаватели</h3>
                 <hr />
             </div>
         </div>
@@ -294,126 +296,7 @@
 </section>
 <!--TEAM SECTION END-->
 <!--GRID SECTION START-->
-<section id="grid" >
-    <div class="container">
-        <div class="row text-center header animate-in" data-anim-type="fade-in-up">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-                <h3>Grid Overview </h3>
-                <hr />
-
-            </div>
-        </div>
-        <div class="row pad-bottom animate-in" data-anim-type="fade-in-up">
-
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                <h2>1/4 Section</h2>
-                <p>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat,
-                    consectetur tellus nec, porttitor nulla.
-                </p>
-
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                <h2>1/4 Section</h2>
-                <p>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat,
-                    consectetur tellus nec, porttitor nulla.
-                </p>
-
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                <h2>1/4 Section</h2>
-                <p>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat,
-                    consectetur tellus nec, porttitor nulla.
-                </p>
-
-            </div>
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                <h2>1/4 Section</h2>
-                <p>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat,
-                    consectetur tellus nec, porttitor nulla.
-                </p>
-
-            </div>
-        </div>
-        <div class="row pad-bottom animate-in" data-anim-type="fade-in-up">
-
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <h2>1/3 Section</h2>
-                <p>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat,
-                    consectetur tellus nec, porttitor nulla.
-                </p>
-
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <h2>1/3 Section</h2>
-                <p>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat,
-                    consectetur tellus nec, porttitor nulla.
-                </p>
-
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <h2>1/3 Section</h2>
-                <p>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat,
-                    consectetur tellus nec, porttitor nulla.
-                </p>
-
-            </div>
-
-        </div>
-        <div class="row pad-bottom animate-in" data-anim-type="fade-in-up">
-
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <h2>1/2 Section</h2>
-                <p>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat,
-                    consectetur tellus nec, porttitor nulla.
-                </p>
-
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <h2>1/2 Section</h2>
-                <p>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat,
-                    consectetur tellus nec, porttitor nulla.
-                </p>
-
-            </div>
-
-
-        </div>
-        <div class="row animate-in" data-anim-type="fade-in-up">
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h2>Full Section</h2>
-                <p>
-                    Morbi mollis lectus et ipsum sollicitudin varius.
-                    Aliquam tempus ante placerat,
-                    consectetur tellus nec, porttitor nulla.
-                </p>
-
-            </div>
-
-
-
-        </div>
-    </div>
-</section>
 <!--GRID SECTION END-->
 <!--CONTACT SECTION START-->
 <section id="contact" >
@@ -421,7 +304,7 @@
         <div class="row text-center header animate-in" data-anim-type="fade-in-up">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-                <h3>Contact Details </h3>
+                <h3>Контактная информация </h3>
                 <hr />
 
             </div>

@@ -41,7 +41,7 @@
             </button>
             <a class="navbar-brand" href="#">
 
-                Охрана окружающей среды
+                Ресурсный центр
 
             </a>
     </div>
@@ -55,11 +55,11 @@
     </div>
     @foreach($news as $new)
         <div class="card"  style="width: 48rem; margin-left: 600px; margin-bottom: 40px; margin-top: 100px ">
-            <img class="card-img-top" src="{{ asset('img')}}/{{$new->img}}.jpg" alt="Card image cap">
+            <img class="card-img-top" src="{{ asset('img')}}/{{$new->img}}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">{{$new->title}}</h5>
                 <p style="text-overflow: ellipsis;overflow: hidden; max-height: 17px" class="card-text">{{$new->text}}</p>
-                <a href="{{route('post.show', ['id'=>$new->id])}}" class="btn btn-primary">Прочитать полностью</a>
+                <a href="{{--/post/{$new->id}--}}{{--{{route('post.show', ['id'=>$new->id])}}--}}" class="btn btn-primary">Прочитать полностью</a>
             </div>
         </div>
     @endforeach

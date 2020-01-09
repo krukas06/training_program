@@ -1,1 +1,1 @@
-{{$news->text}}
+<p>{{$news->id}}</p>

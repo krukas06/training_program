@@ -39,6 +39,8 @@ Route::resource('post', 'PostController',['parametres'=>[
 ]
 ]);
 
+/*Route::get('/post/{id}', 'PostController@show');*/
+
 //админка
 Route::get('/admin', function () {
     return view('admin_panel');
@@ -46,6 +48,10 @@ Route::get('/admin', function () {
 
 Route::get('add/news', function () {
     return view('newsadd');
+});
+
+Route::get('add/lesson', function () {
+    return view('lessonadd');
 });
 
 //Добавление новости
@@ -57,3 +63,5 @@ Route::get('/list', 'PostController@index');
 //Удаление новостей
 Route::post('/del', 'PostController@deletePost')->middleware('auth');
 
+//Список курсов
+Route::get('/lessons', 'LessonController@index');

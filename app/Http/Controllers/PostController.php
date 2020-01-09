@@ -33,7 +33,7 @@ class PostController extends Controller
 
 
     public function getPost($id){
-        $news = $this->p_rep->one($id);
+        $news = $this->n_rep->one($id);
         //$pages->img = json_decode($pages->img);
         return $news;
     }
@@ -106,7 +106,7 @@ class PostController extends Controller
     {
         //
         $news=$this->getPost($id);
-
+        dd($news);
         return view('post')->with(array('news'=>$news));
     }
 

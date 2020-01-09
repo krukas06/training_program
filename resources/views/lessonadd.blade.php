@@ -5,13 +5,12 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>Админ панель</title>
     <link rel="stylesheet" href="{{asset('css/960.css')}}" type="text/css" media="screen" charset="utf-8" />
+    <!--<link rel="stylesheet" href="css/fluid.css" type="text/css" media="screen" charset="utf-8" />-->
     <link rel="stylesheet" href="{{asset('css/template.css')}}" type="text/css" media="screen" charset="utf-8" />
     <link rel="stylesheet" href="{{asset('css/colour.css')}}" type="text/css" media="screen" charset="utf-8" />
 </head>
 <body>
-
 <h1 id="head">Админ панель</h1>
-
 <ul id="navigation">
     <li><a href="/">На главную</a></li>
     <li><a href="/add/news">Добавление новостей</a></li>
@@ -19,20 +18,43 @@
     <li><a href="/list">Список новостей</a></li>
 
 </ul>
-
 <div id="content" class="container_16 clearfix">
-    <div class="grid_11">
-        <h2>About</h2>
-        <p>After looking for a decent admin template and not having any success I decided to knock this one up. It's released under the creative commons license, so make sure you look at that before using it in your project.</p>
-        <h3>Credits</h3>
-        <p>I would like to thank Nathan Smith for creating the 960.gs CSS framework which made this project a <i>little</i> easier.</p>
+    <div class="grid_16">
+        <h2>Добавление курса</h2>
     </div>
 
+
+    <form enctype="multipart/form-data" method="post" action="/add">
+        {{csrf_field()}}
+        <div class="grid_5">
+            <p>
+                <label for="title">Заголовок </label>
+                <input type="text" name="title" />
+            </p>
+        </div>
+
+
+
+        <div class="grid_16">
+            <p>
+                <label>Текст новости</label>
+                <textarea name="text"></textarea>
+            </p>
+        </div>
+
+        <div class="grid_16">
+            <p>
+                <input type="file" id="img" name="img">
+            </p>
+            <p class="submit">
+
+                <input type="submit" value="Опубликовать" />
+            </p>
+        </div>
+    </form>
 </div>
 
-<div id="foot">
-    <i>Designed by </i><a href="http://mathew-davies.co.uk/">Mathew Davies</a>
-</div>
 
 </body>
 </html>
+
