@@ -60,8 +60,17 @@ Route::resource('/add', 'PostController')->only(['store'])->middleware('auth');
 //Список новостей
 Route::get('/list', 'PostController@index');
 
+//Список курсов
+Route::get('/listcurs', 'LessonController@list_lessons');
+
 //Удаление новостей
 Route::post('/del', 'PostController@deletePost')->middleware('auth');
 
+//Удаление курса
+Route::post('/delcurs', 'LessonController@deleteLesson')->middleware('auth');
+
 //Список курсов
 Route::get('/lessons', 'LessonController@index');
+
+//Добавление курса
+Route::resource('/addcurs', 'LessonController')->only(['store'])->middleware('auth');

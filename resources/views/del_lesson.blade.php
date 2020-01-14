@@ -34,16 +34,16 @@
             </thead>
 
             <tbody>
-            @foreach($posts as $post)
-            <tr>
-                <form method="post" action="/del">
-                    @csrf
-                <input type="hidden" name="id" value="{{$post->id}}">
-                <td>{{$post->title}}</td>
-                <td>{{$post->text}}</td>
-                <td><input type="submit" value="Удалить новость"></td>
-                </form>
-            </tr>
+            @foreach($lessons as $lesson)
+                <tr>
+                    <form method="post" action="/delcurs">
+                        @csrf
+                        <input type="hidden" name="id" value="{{$lesson->id}}">
+                        <td>{{$lesson->name}}</td>
+                        <td>{{$lesson->discription}}</td>
+                        <td><input type="submit" value="Удалить курс"></td>
+                    </form>
+                </tr>
             @endforeach
 
             </tbody>

@@ -16,6 +16,7 @@
         <li><a href="/add/news">Добавление новостей</a></li>
         <li><a href="/add/lesson">Добавление курсов</a></li>
         <li><a href="/list">Список новостей</a></li>
+        <li><a href="/listcurs">Список курсов</a></li>
 
     </ul>
 			<div id="content" class="container_16 clearfix">

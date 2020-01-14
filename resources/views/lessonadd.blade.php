@@ -16,6 +16,7 @@
     <li><a href="/add/news">Добавление новостей</a></li>
     <li><a href="/add/lesson">Добавление курсов</a></li>
     <li><a href="/list">Список новостей</a></li>
+    <li><a href="/listcurs">Список курсов</a></li>
 
 </ul>
 <div id="content" class="container_16 clearfix">
@@ -24,12 +25,12 @@
     </div>
 
 
-    <form enctype="multipart/form-data" method="post" action="/add">
+    <form enctype="multipart/form-data" method="post" action="/addcurs">
         {{csrf_field()}}
         <div class="grid_5">
             <p>
-                <label for="title">Заголовок </label>
-                <input type="text" name="title" />
+                <label for="name">Заголовок </label>
+                <input type="text" name="name" />
             </p>
         </div>
 
@@ -37,8 +38,36 @@
 
         <div class="grid_16">
             <p>
-                <label>Текст новости</label>
-                <textarea name="text"></textarea>
+                <label>Краткое описание курса</label>
+                <textarea name="discription"></textarea>
+            </p>
+        </div>
+
+        <div class="grid_16">
+            <p>
+                <label>Подробное описание курса</label>
+                <textarea name="all_text"></textarea>
+            </p>
+        </div>
+
+        <div class="grid_5">
+            <p>
+                <label for="teacher">Преподаватель </label>
+                <input type="text" name="teacher" />
+            </p>
+        </div>
+
+        <div class="grid_5">
+            <p>
+                <label for="zap">Количество записанных</label>
+                <input type="text" name="zap" value="0" />
+            </p>
+        </div>
+
+        <div class="grid_5">
+            <p>
+                <label for="treb">Количество мест</label>
+                <input type="text" name="treb" value="0" />
             </p>
         </div>
 
@@ -48,7 +77,7 @@
             </p>
             <p class="submit">
 
-                <input type="submit" value="Опубликовать" />
+                <input type="submit" value="Добавить" />
             </p>
         </div>
     </form>

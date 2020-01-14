@@ -36,6 +36,22 @@ class LessonController extends Controller
 
     }
 
+    public function deletelesson(Request $request){
+        $data = $request->all();
+        $post = Lesson::find($data['id']);
+        $post->delete();
+        return redirect("/listcurs");
+    }
+
+    public function list_lessons()
+    {
+        //
+
+        $lessons =$this->getLessons();
+        return view('del_lesson')->with(array('lessons'=>$lessons));
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -54,7 +70,22 @@ class LessonController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->hasFile('img')) {
+
+            // dd($request);
+            //$destinationPath = 'content_images/';
+            $filename = $request['img']->getClientOriginalName();
+            $file = $request->file('img');
+            $file->move(public_path('img'), $filename);
+        }
+        $data = $request->all();
+        $data['img'] = $filename;
+        //$data['img'] = json_encode($names);
+        $post = new  Lesson;
+        $post ->fill($data);
+        $post ->save();
+        return redirect('/admin');
+
     }
 
     /**
