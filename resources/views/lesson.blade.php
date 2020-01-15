@@ -28,6 +28,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body data-spy="scroll" data-target="#menu-section" style="/*background-image: url({{asset('img/2.jpg')}}); background-repeat: no-repeat; background-size: 100%;*/">
 <!--MENU SECTION START-->
@@ -41,7 +42,7 @@
             </button>
             <a class="navbar-brand" href="#">
 
-                IT школа
+                Ресурсный центр
 
             </a>
         </div>
@@ -53,46 +54,64 @@
 
     </div>
 </div>
-{{--@foreach($lessons as $lesson)
-    <div class="card"  style="width: 48rem; margin-left: 600px; margin-bottom: 40px; margin-top: 100px ">
-        <img class="card-img-top" src="{{ asset('img')}}/{{$new->img}}" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">{{$new->title}}</h5>
-            <p style="text-overflow: ellipsis;overflow: hidden; max-height: 17px" class="card-text">{{$new->text}}</p>
-            <a href="--}}{{--/post/{$new->id}--}}{{----}}{{--{{route('post.show', ['id'=>$new->id])}}--}}{{--" class="btn btn-primary">Прочитать полностью</a>
-        </div>
-    </div>
-@endforeach--}}
-<section id="services" >
+<img class="card-img-top" style="width: 40%; margin-left: 40px; margin-top: 40px;" src="{{ asset('img')}}/{{$lessons->img}}" alt="Card image cap">
+<div class="card-body" style="margin-left: 48%; margin-top: 10px;">
+    <h1 class="card-title">{{$lessons->name}}</h1>
+
+</div>
+
+<div style="margin-left: 300px; margin-right: 80px; width: 1300px; margin-bottom: 20px">
+    <p style="text-align: justify; line-height: normal ">{{$lessons->all_text}}</p>
+</div>
+
+
+<div style="margin-left: 300px; margin-right: 80px; width: 1300px; margin-bottom: 20px">
+    <p style="text-align: justify; line-height: normal "> <h4>Преподаватель: {{$lessons->teacher}}</h4> </p>
+</div>
+
+<div style="width: 260px; margin-bottom: 30px; height: 50px; padding-top: 20px; padding-left: 20px; margin-left: 10%; background-color: #f9d6d5; border-radius: 10px ">
+
+    <p>Записано: {{$lessons->zap}} </p>
+</div>
+<div style="width: 260px; margin-bottom: 30px; height: 50px; padding-top: 20px; padding-left: 20px; margin-left: 10%; background-color: #98e1b7; border-radius: 10px ">
+    <p>Свобоные места: {{$lessons->treb}}</p>
+</div>
+
+<div style="margin-left: 48%; margin-bottom: 30px">
+    <button style="width: 180px; color: #c4e3f3" class="btn-success btn-lg"  data-toggle="modal" data-target="#modalRegisterForm"><a href="#">Записаться</a></button>
+</div>
+
+<div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
+    <div> </div>
     <div class="container">
-        <div class="row text-center header">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 animate-in" data-anim-type="fade-in-up">
-                <h3>Услуги</h3>
-                <hr />
-            </div>
-            @foreach($lessons as $lesson)
-            <div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
-
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html">
-                    <div class="work-wrapper">
-
-                        <a class="fancybox-media" title="Image Title Goes Here" href="{{route('lesson.show', ['lesson'=>$lesson->id])}}">
-
-                            <img class="card-img-top" src="{{ asset('img')}}/{{$lesson->img}}" alt="Card image cap">
-                        </a>
-                        <p> {{$lesson->discription}}</p>
-                        <p>Записано: {{$lesson->treb}} человека;  Свободно: {{$lesson->zap}} мест</p>
-                        <h4>{{$lesson->name}}</h4>
+        <div class="row">
+            <div class="col-md-4"> </div>
+            <div class="col-md-4">
+                <h3>Задать вопрос</h3>
+                <form action="/mail" method="post">
+                    {{csrf_field()}}
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="name" name="name" class="form-control" id="name" placeholder="Имя">
                     </div>
-                </div>
-
-
+                    <div class="form-group">
+                        <label for="email1">E-mail:</label>
+                        <input type="email" name="email" class="form-control" id="email1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Заголовок</label>
+                        <input type="phone" name="title" class="form-control" id="phone" placeholder="Заголовок">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Текст вопроса:</label>
+                        <textarea  class="form-control" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info">Отправить вопрос</button>
+                </form>
             </div>
-            @endforeach
-        </div>
+            <div class="col-md-4"> </div> </div>
     </div>
-    </div>
-</section>
+</div>
 
 
 <section id="contact" >

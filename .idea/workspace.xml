@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="479bb8c4-1e69-4f0d-a9d3-656266e99dbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/del_lesson.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LessonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LessonController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/lesson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lessonadd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lessonadd.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/list_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list_news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/newsadd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newsadd.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/list_lessons.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list_lessons.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -189,7 +187,7 @@
       <workItem from="1577089256422" duration="2132000" />
       <workItem from="1577167526169" duration="3591000" />
       <workItem from="1577341618618" duration="737000" />
-      <workItem from="1578550041881" duration="12472000" />
+      <workItem from="1578550041881" duration="20586000" />
     </task>
     <servers />
   </component>
@@ -209,13 +207,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577344468559" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1578988259049">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1579077371446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578988259049" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579077371446" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1577341638592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577341638592" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1579078197137">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579078197137" />
   </component>
 </project>

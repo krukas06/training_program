@@ -38,6 +38,11 @@ Route::resource('post', 'PostController',['parametres'=>[
     'post'=>'id'
 ]
 ]);
+//выюор одного курса
+Route::resource('lesson', 'LessonController',['parametres'=>[
+    'lesson'=>'id'
+]
+]);
 
 /*Route::get('/post/{id}', 'PostController@show');*/
 

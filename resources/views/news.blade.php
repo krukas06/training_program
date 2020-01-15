@@ -59,7 +59,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{$new->title}}</h5>
                 <p style="text-overflow: ellipsis;overflow: hidden; max-height: 17px" class="card-text">{{$new->text}}</p>
-                <a href="{{--/post/{$new->id}--}}{{--{{route('post.show', ['id'=>$new->id])}}--}}" class="btn btn-primary">Прочитать полностью</a>
+                <a href="{{route('post.show', ['post'=>$new->id])}}" class="btn btn-primary">Прочитать полностью</a>
             </div>
         </div>
     @endforeach

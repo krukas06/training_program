@@ -27,6 +27,12 @@ class LessonController extends Controller
         return $lessons;
     }
 
+    public function getLesson($id){
+        $lessons = $this->l_rep->one($id);
+        //$pages->img = json_decode($pages->img);
+        return $lessons;
+    }
+
     public function index()
     {
         //
@@ -97,6 +103,9 @@ class LessonController extends Controller
     public function show($id)
     {
         //
+        $lessons=$this->getLesson($id);
+        //dd($lessons);
+        return view('lesson')->with(array('lessons'=>$lessons));
     }
 
     /**

@@ -106,7 +106,7 @@ class PostController extends Controller
     {
         //
         $news=$this->getPost($id);
-        dd($news);
+        //dd($news);
         return view('post')->with(array('news'=>$news));
     }
 
