@@ -51,7 +51,7 @@
                 <li><a href="#home">Главная</a></li>
                 <li><a href="#services">Услуги</a></li>
                 <li><a href="/lessons">IT школа</a></li>
-                <li><a href="#">Школа юный инженер</a></li>
+                <li><a href="/ingeneer">Школа юный инженер</a></li>
                 <li><a href="#">Объеденения по интересам</a></li>
                 <li><a href="#">Расписание</a></li>
                 <li><a href="#contact">Контакты</a></li>
@@ -148,7 +148,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html css">
                     <div class="work-wrapper">
 
-                        <a class="fancybox-media" title="Image Title Goes Here" href="/conspect">
+                        <a class="fancybox-media" title="Image Title Goes Here" href="/ingeneer">
 
                             <img src="{{asset('img/portfolio/2.jpg')}}" class="img-responsive img-rounded" alt="" />
                         </a>

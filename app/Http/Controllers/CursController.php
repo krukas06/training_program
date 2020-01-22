@@ -30,6 +30,14 @@ class CursController extends Controller
 
     }
 
+    public function index()
+    {
+        //
+
+        return view('joung_ingeneer');
+
+    }
+
     public function add_orders(Request $request){
         $data = $request->except('id');
         $id = $request->input('id');
@@ -53,6 +61,30 @@ class CursController extends Controller
         //return 1;
 
         return redirect('/lesson/'.$id);
+    }
+
+    public function add_orders_ing(Request $request){
+        $data = $request->all();
+        /*$this->validate($request, [
+            'name' => 'required|max:255',
+            'data_birth' => 'required|max:255',
+            'data_dead' => 'required|max:255',
+            'text' => 'required',
+            'number' => 'max:255',
+            'city' => 'max:255',
+            'Otchestvo' => 'max:255',
+            'surname' => 'max:255',
+        ]);*/
+        //dd($  data);
+        //не работает присовение текущего пользователя
+        //$data->user_id=Auth::user()->id;
+        /*$data['img'] = json_encode($names);*/
+        $order = new  Order;
+        $order ->fill($data);
+        $order ->save();
+        //return 1;
+
+        return redirect('/ingeneer');
     }
 
 }

@@ -71,6 +71,7 @@
                 <hr />
             </div>
             @foreach($lessons as $lesson)
+            @if($lesson->flag == 0)
             <div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
 
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 html">
@@ -88,6 +89,7 @@
 
 
             </div>
+            @endif
             @endforeach
         </div>
     </div>

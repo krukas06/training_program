@@ -72,15 +72,38 @@
             </p>
         </div>
 
+        {{--<div class="grid_5">
+            <p>
+                <label for="treb">Категория</label>
+                <label for="it">IT школа</label>
+                <input id="it" type="checkbox" name="flag" value="0" />
+                <label for="int">Объеденение по интересам</label>
+                <input id="int" type="checkbox" name="flag" value="1" />
+            </p>
+        </div>--}}
+
+
+        <div class="grid_5">
+            <label for="cat">Категория</label>
+            <p>
+                <select id="cat" name="flag">
+                    <option  value="0">IT школа</option>
+                    <option value="1">Объеденение по интересам</option>
+                </select>
+            </p>
+        </div>
+
         <div class="grid_16">
             <p>
                 <input type="file" id="img" name="img">
             </p>
+
             <p class="submit">
 
                 <input type="submit" value="Добавить" />
             </p>
         </div>
+
     </form>
 </div>
 

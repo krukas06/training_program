@@ -85,3 +85,9 @@ Route::resource('/addcurs', 'LessonController')->only(['store'])->middleware('au
 
 //Добавление заявки на запись
 Route::post('/add_order', 'CursController@add_orders');
+
+//Главная школы юнный инженер
+Route::get('/ingeneer', 'CursController@index');
+
+//Добавление заявки на запись юный инженер
+Route::post('/add_order_ing', 'CursController@add_orders_ing');
