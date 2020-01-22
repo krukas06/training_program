@@ -68,6 +68,9 @@ Route::get('/list', 'PostController@index');
 //Список курсов
 Route::get('/listcurs', 'LessonController@list_lessons');
 
+//Список заявок
+Route::get('/listorder', 'CursController@list_order');
+
 //Удаление новостей
 Route::post('/del', 'PostController@deletePost')->middleware('auth');
 
@@ -79,3 +82,6 @@ Route::get('/lessons', 'LessonController@index');
 
 //Добавление курса
 Route::resource('/addcurs', 'LessonController')->only(['store'])->middleware('auth');
+
+//Добавление заявки на запись
+Route::post('/add_order', 'CursController@add_orders');

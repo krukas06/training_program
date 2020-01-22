@@ -12,6 +12,7 @@ class Controller extends BaseController
 {
     protected $n_rep;
     protected $l_rep;
+    protected $o_rep;
 
 
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;

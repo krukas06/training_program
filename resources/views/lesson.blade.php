@@ -29,6 +29,10 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body data-spy="scroll" data-target="#menu-section" style="/*background-image: url({{asset('img/2.jpg')}}); background-repeat: no-repeat; background-size: 100%;*/">
 <!--MENU SECTION START-->
@@ -69,17 +73,67 @@
     <p style="text-align: justify; line-height: normal "> <h4>Преподаватель: {{$lessons->teacher}}</h4> </p>
 </div>
 
-<div style="width: 260px; margin-bottom: 30px; height: 50px; padding-top: 20px; padding-left: 20px; margin-left: 10%; background-color: #f9d6d5; border-radius: 10px ">
+{{--<div style="width: 260px; margin-bottom: 30px; height: 50px; padding-top: 20px; padding-left: 20px; margin-left: 10%; background-color: #f9d6d5; border-radius: 10px ">
 
     <p>Записано: {{$lessons->zap}} </p>
 </div>
 <div style="width: 260px; margin-bottom: 30px; height: 50px; padding-top: 20px; padding-left: 20px; margin-left: 10%; background-color: #98e1b7; border-radius: 10px ">
     <p>Свобоные места: {{$lessons->treb}}</p>
-</div>
+</div>--}}
 
 <div style="margin-left: 48%; margin-bottom: 30px">
     <button style="width: 180px; color: #c4e3f3" class="btn-success btn-lg"  data-toggle="modal" data-target="#modalRegisterForm"><a href="#">Записаться</a></button>
 </div>
+
+
+
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Запись на курс</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="/add_order" method="post">
+                <div class="modal-body mx-3">
+                    {{csrf_field()}}
+
+                    <input type="hidden" name="id" value="{{$lessons->id}}">
+                    <input type="hidden" name="name_curs" value="{{$lessons->name}}">
+
+                    <div class="md-form mb-5">
+                        <i class="fas  prefix grey-text"></i>
+                        <label style="margin-left: 5px" data-error="wrong" data-success="right" for="orangeForm-name">Ваше имя</label>
+                        <input name="name" type="text" id="orangeForm-name" class="form-control validate">
+                    </div>
+                    <div class="md-form mb-5">
+                        <i class="fas  prefix grey-text"></i>
+                        <label style="margin-left: 5px" {{--data-error="wrong" data-success="right" for="orangeForm-email"--}}>Ваша фамилия:</label>
+                        <input type="text" name="surname" id="orangeForm-email" class="form-control ">
+                    </div>
+                    <div class="md-form mb-4">
+                        <i class="fas fa-hand-holding-usd prefix grey-text"></i>
+                        <label style="margin-left: 5px" data-error="wrong" data-success="right" for="orangeForm-pass">Ваше отчество:</label>
+                        <input type="text" name="otchestvo" id="orangeForm-pass" class="form-control validate">
+                    </div>
+                    <div class="md-form mb-4">
+                        <i class="fas fa-hand-holding-usd prefix grey-text"></i>
+                        <label style="margin-left: 5px" data-error="wrong" data-success="right" for="orangeForm-pass">E-mail:</label>
+                        <input type="email" name="email" id="orangeForm-pass" class="form-control validate">
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="submit" {{--data-dismiss="modal" aria-label="Close"--}} class="сlose btn btn-success">{{--<a href="/add_money">--}}Подать заявку{{--</a>--}}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 
 <div class="row text-center animate-in" data-anim-type="fade-in-up" id="work-div">
     <div> </div>
@@ -168,6 +222,7 @@
 
     </div>
 </section>
+
 
 </body>
 </html>

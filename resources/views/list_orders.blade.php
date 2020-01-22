@@ -28,23 +28,25 @@
         <table>
             <thead>
             <tr>
-                <th>Заголовок</th>
-                <th>Текст</th>
-                <th colspan="2" width="10%">Действие</th>
+                <th>Название курса</th>
+                <th>ФИО</th>
+                <th colspan="2" width="10%">Email</th>
+                <th>Дата подачи</th>
             </tr>
             </thead>
 
             <tbody>
-            @foreach($posts as $post)
-            <tr>
-                <form method="post" action="/del">
-                    @csrf
-                <input type="hidden" name="id" value="{{$post->id}}">
-                <td>{{$post->title}}</td>
-                <td>{{$post->text}}</td>
-                <td><input type="submit" value="Удалить новость"></td>
-                </form>
-            </tr>
+            @foreach($orders as $order)
+                <tr>
+                    <form method="post" action="/delcurs">
+                        @csrf
+                        <input type="hidden" name="id" value="{{$order->id}}">
+                        <td>{{$order->name_curs}}</td>
+                        <td>{{$order->name}} {{$order->surname}} {{$order->otchestvo}}  </td>
+                        <td>{{$order->email}}</td>
+                        <td>{{$order->created_at}}</td>
+                    </form>
+                </tr>
             @endforeach
 
             </tbody>
