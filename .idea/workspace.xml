@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="479bb8c4-1e69-4f0d-a9d3-656266e99dbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Repositories/OrdersRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/list_orders.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CursController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CursController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/del_lesson.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/del_lesson.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lesson.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lesson.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lessonadd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lessonadd.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/list_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list_news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/newsadd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newsadd.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="479bb8c4-1e69-4f0d-a9d3-656266e99dbe" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +179,7 @@
       <workItem from="1577089256422" duration="2132000" />
       <workItem from="1577167526169" duration="3591000" />
       <workItem from="1577341618618" duration="737000" />
-      <workItem from="1578550041881" duration="30014000" />
+      <workItem from="1578550041881" duration="30329000" />
     </task>
     <servers />
   </component>
